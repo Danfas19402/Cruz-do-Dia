@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruz do Dia - Jogo do Bicho</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cruz do Dia</h1>
+    <p>Método baseado em cruzamento de números</p>
+  </header>
+
+  <main>
+    <!-- Cruz do Dia -->
+    <section class="cruz-card">
+      <h2>Cruz do Dia</h2>
+      
+      <!-- Campo para digitar os 4 números -->
+      <div class="inputs">
+        <input type="number" id="n1" placeholder="N1" min="0" max="9">
+        <input type="number" id="n2" placeholder="N2" min="0" max="9">
+        <input type="number" id="n3" placeholder="N3" min="0" max="9">
+        <input type="number" id="n4" placeholder="N4" min="0" max="9">
+        <button onclick="definirCruzManual()">Definir Cruz Manual</button>
+        <button onclick="limparCruz()">Limpar Cruz</button>
+      </div>
+
+      <!-- Grid Cruz -->
+      <div class="grid" id="cruzGrid"></div>
+
+      <!-- Botões -->
+      <div class="btns">
+        <button onclick="gerarCruz()">Gerar Cruz do Dia</button>
+        <button onclick="gerarSugestoes()">Gerar Sugestões</button>
+        <button onclick="limparSugestoes()">Limpar Sugestões</button>
+      </div>
+    </section>
+
+    <!-- Sugestões -->
+    <section class="sugestoes" id="sugestoes">
+      <h2>Sugestões Baseadas na Cruz</h2>
+      <div class="lista-bichos" id="listaBichos"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jogo do Bicho - Cruz do Dia © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
