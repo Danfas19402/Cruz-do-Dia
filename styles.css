@@ -1,0 +1,173 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #6a1b9a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Card Cruz */
+.cruz-card {
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+.inputs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.inputs input {
+  width: 50px;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.inputs button {
+  background: #8e24aa;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.inputs button:hover {
+  background: #6a1b9a;
+}
+
+/* Grid Cruz */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.num {
+  background: #e1bee7;
+  color: #4a148c;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Botões */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #8e24aa;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #6a1b9a;
+}
+
+/* Sugestões */
+.sugestoes {
+  background: #fff;
+  width: 95%;
+  max-width: 900px; /* 📌 aumentei para caber mais */
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-height: 600px; /* 📌 caixa maior */
+  overflow-y: auto;  /* 📌 scroll se passar do limite */
+}
+
+.sugestoes h2 {
+  margin-bottom: 15px;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+/* Lista de bichos */
+.lista-bichos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bicho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ede7f6;
+  padding: 15px;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.bicho-name {
+  font-weight: bold;
+  color: #4a148c;
+  margin-bottom: 8px;
+  flex: 1 1 120px;
+}
+
+.bicho-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bicho-buttons button {
+  background: #d1c4e9;
+  color: #311b92;
+  font-weight: bold;
+}
+
+.bicho-buttons button:hover {
+  background: #b39ddb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: #6a1b9a;
+  color: white;
+}
